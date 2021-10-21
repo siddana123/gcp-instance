@@ -1,11 +1,11 @@
 provider "google" {  
   project = "unique-balancer-327214"  
-  region  = "us-central1" 
+  region  = "us-east1" 
   }
 resource "google_compute_instance" "my_vm" {
   name         = "tf-tutorial-vm"
   machine_type = "f1-micro"
-  zone         = "us-central1-a"
+  zone         = "us-east1-b"
 
   boot_disk {
 
